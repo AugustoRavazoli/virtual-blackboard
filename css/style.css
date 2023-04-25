@@ -1,0 +1,98 @@
+:root {
+  --pen-white: #EBEBE9;
+  --pen-green: #77B14D;
+  --pen-red: #DD4D6B;
+  --pen-orange: #D3762C;
+  --pen-yellow: #D8CB49;
+  --pen-blue: #76C8DC;
+  --eraser-border: #FEBB64;
+  --eraser: #321B0D;
+  --background: #005232;
+  --border: #d6b16a;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  cursor: none;
+  user-select: none;
+}
+
+.canvas {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.border {
+  box-shadow: 0px 0px 25px 0px #000 inset;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 24px solid var(--border);
+}
+
+.tools {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  padding: 24px;
+
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  cursor: default;
+}
+
+.pen, .eraser {
+  cursor: pointer;
+}
+
+.pen {
+  border: none;
+  width: 40px;
+  height: 8px;
+}
+
+.eraser {
+  background-color: var(--eraser-border);
+  border: none;
+  border-bottom: 5px solid var(--eraser);
+  width: 80px;
+  height: 20px;
+}
+
+#white {
+  background-color: var(--pen-white);
+}
+
+#red {
+  background-color: var(--pen-red);
+}
+
+#blue {
+  background-color: var(--pen-blue);
+}
+
+#yellow {
+  background-color: var(--pen-yellow);
+}
+
+#green {
+  background-color: var(--pen-green);
+}
+
+#orange {
+  background-color: var(--pen-orange);
+}
+
+
